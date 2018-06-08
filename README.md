@@ -1,12 +1,14 @@
 # firstKotlin
 
+like this
+
 ```kotlin
 package firstKotlin
 
 import processing.core.*
 
 fun main(args:Array<String>) {
-    PApplet.main("firstKotlin.MySketch")
+  PApplet.main("firstKotlin.MySketch")
 }
 
 class MySketch : PApplet() {
@@ -17,13 +19,13 @@ class MySketch : PApplet() {
 
   override fun setup() {
     background(255)
-	stroke(0f, 0f, 255.0f)
+    stroke(0f, 0f, 255.0f)
   }
 
   override fun draw() {
     if (mousePressed){
-    	line(mouseX.toFloat(), mouseY.toFloat(),
-			pmouseX.toFloat(), pmouseY.toFloat())
+      line(mouseX.toFloat(), mouseY.toFloat(),
+	pmouseX.toFloat(), pmouseY.toFloat())
     }
   }
 }
